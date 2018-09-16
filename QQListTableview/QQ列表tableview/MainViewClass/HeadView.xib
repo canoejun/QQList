@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeadView">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="43"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8J-3T-y9M">
+                    <rect key="frame" x="10" y="10" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="sYb-xH-oF7"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="pull"/>
+                    <connections>
+                        <action selector="pullButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="FtW-MX-tYM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQl-EE-PvF">
+                    <rect key="frame" x="37" y="10" width="42" height="22"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0O0-xc-0Ol">
+                    <rect key="frame" x="318" y="10" width="42" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0O0-xc-0Ol" firstAttribute="top" secondItem="lQl-EE-PvF" secondAttribute="top" id="3rK-A1-qUz"/>
+                <constraint firstItem="lQl-EE-PvF" firstAttribute="top" secondItem="T8J-3T-y9M" secondAttribute="top" id="4fG-em-8jt"/>
+                <constraint firstItem="lQl-EE-PvF" firstAttribute="leading" secondItem="T8J-3T-y9M" secondAttribute="trailing" constant="5" id="JZv-UT-ZeS"/>
+                <constraint firstItem="T8J-3T-y9M" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="ODx-DL-TDo"/>
+                <constraint firstItem="T8J-3T-y9M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="SCk-bT-0Xw"/>
+                <constraint firstItem="0O0-xc-0Ol" firstAttribute="bottom" secondItem="lQl-EE-PvF" secondAttribute="bottom" id="ehe-xR-ICo"/>
+                <constraint firstItem="T8J-3T-y9M" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-11" id="hos-A5-K3y"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0O0-xc-0Ol" secondAttribute="trailing" constant="20" id="jmE-Xg-8bP"/>
+                <constraint firstItem="lQl-EE-PvF" firstAttribute="bottom" secondItem="T8J-3T-y9M" secondAttribute="bottom" id="zNd-Iu-Beg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="membersCountLabel" destination="0O0-xc-0Ol" id="oI3-E3-A4W"/>
+                <outlet property="pullButton" destination="T8J-3T-y9M" id="pKj-qd-7EB"/>
+                <outlet property="titleLabel" destination="lQl-EE-PvF" id="Aq3-uP-nd1"/>
+            </connections>
+            <point key="canvasLocation" x="-109" y="-230.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pull" width="289" height="278"/>
+    </resources>
+</document>
