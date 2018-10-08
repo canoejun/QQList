@@ -3,4 +3,4 @@
 
 录制的项目视频(https://github.com/canoejun/QQList/blob/master/QQList.mp4)
 
-![image]https://github.com/canoejun/QQList/blob/master/QQList.gif
+![image](https://github.com/canoejun/QQList/blob/master/QQList.gif)
